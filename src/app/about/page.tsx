@@ -7,32 +7,41 @@ export default function AboutPage() {
     <main className="bg-[#f7f1e8] text-[#252318]">
       <Navbar />
       {/* HERO */}
-      <section className="relative min-h-[580px] overflow-hidden border-b border-[#d8c7a7] bg-[#eadfcc] shadow-[0_18px_45px_rgba(72,55,28,0.12)]">
-        <Image
-          src="/about/charity-home.jpeg"
-          alt="Charity Atelier event styling"
-          fill
-          priority
-          sizes="100vw"
-          className="translate-x-4 scale-[1.04] object-contain object-right brightness-[1.06] contrast-[1.08] saturate-[1.12] sm:translate-x-8 lg:translate-x-14"
-        />
+      <section className="overflow-hidden border-b border-[#d8c7a7] bg-[#f7f1e8] shadow-[0_18px_45px_rgba(72,55,28,0.12)] lg:relative lg:min-h-[580px] lg:bg-[#eadfcc]">
+        <div className="relative h-[430px] overflow-hidden bg-[#eadfcc] sm:h-[500px] lg:absolute lg:inset-0 lg:h-auto">
+          <Image
+            src="/about/charity-home.jpeg"
+            alt="Charity Atelier event styling"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-[58%_top] brightness-[1.06] contrast-[1.08] saturate-[1.12] lg:translate-x-14 lg:scale-[1.04] lg:object-contain lg:object-right"
+          />
+          <p className="absolute left-5 top-5 z-10 bg-[#6F1D32]/92 px-4 py-2 text-[10px] font-bold uppercase tracking-[0.32em] text-[#FFF9F0] shadow-[0_12px_30px_rgba(111,29,50,0.24)] backdrop-blur-sm lg:hidden">
+            About Cherry
+          </p>
+        </div>
 
-        <div className="absolute inset-0 bg-[linear-gradient(90deg,#f7f1e8_0%,rgba(247,241,232,0.94)_32%,rgba(247,241,232,0.46)_50%,rgba(247,241,232,0.12)_64%,rgba(247,241,232,0)_76%)]" />
+        <div className="hidden lg:absolute lg:inset-0 lg:block lg:bg-[linear-gradient(90deg,#f7f1e8_0%,rgba(247,241,232,0.94)_32%,rgba(247,241,232,0.46)_50%,rgba(247,241,232,0.12)_64%,rgba(247,241,232,0)_76%)]" />
 
-        <div className="relative z-10 mx-auto flex min-h-[580px] max-w-7xl items-center px-6 lg:px-12">
-          <div className="max-w-xl text-center sm:text-left">
-            <h1 className="font-serif text-5xl leading-tight text-[#242116] md:text-6xl">
-              Crafting Beautiful Moments That Last a Lifetime
+        <div className="relative z-10 mx-auto max-w-7xl px-6 py-10 lg:flex lg:min-h-[580px] lg:items-center lg:px-12 lg:py-0">
+          <div className="mx-auto max-w-[360px] text-center sm:max-w-lg lg:mx-0 lg:text-left">
+            <p className="mb-3 hidden text-[11px] font-bold uppercase tracking-[0.32em] text-[#9A6A25] lg:block">
+              About Cherry
+            </p>
+
+            <h1 className="font-serif text-[32px] leading-[1.05] text-[#242116] sm:text-5xl md:text-6xl">
+              Meet the eye behind the details.
             </h1>
 
-            <p className="mt-6 max-w-md text-base leading-8 text-[#514b3d]">
-              We create thoughtful, refined event experiences with care,
-              intention, and timeless detail.
+            <p className="mx-auto mt-4 max-w-sm text-sm leading-6 text-[#514b3d] sm:mt-6 sm:text-base sm:leading-8 lg:mx-0">
+              Thoughtful event styling shaped by warmth, care, and timeless
+              detail.
             </p>
 
             <Link
               href="/inquiry"
-              className="mx-auto mt-9 inline-flex bg-[#292817] px-8 py-4 text-xs font-semibold uppercase tracking-[0.25em] text-white transition hover:bg-[#b58a3b] sm:mx-0"
+              className="mx-auto mt-7 inline-flex bg-[#b58a3b] px-7 py-3.5 text-[11px] font-semibold uppercase tracking-[0.25em] text-[#241816] transition hover:bg-[#292817] hover:text-white lg:mx-0 lg:mt-9 lg:px-8 lg:py-4 lg:text-xs"
             >
               Inquire Now
             </Link>
@@ -208,6 +217,36 @@ export default function AboutPage() {
           />
         </div>
       </section>
+
+      <footer className="bg-[#18100F] px-6 py-10 text-white lg:px-12">
+        <div className="mx-auto flex max-w-7xl flex-col gap-8 text-center md:flex-row md:items-end md:justify-between md:text-left">
+          <div>
+            <p className="font-serif text-3xl font-semibold text-white">
+              Cherry Atelier
+            </p>
+            <p className="mx-auto mt-2 max-w-sm text-sm leading-6 text-[#EADDD6]/70 md:mx-0">
+              Decor and styling for intimate gatherings, thoughtful tables, and
+              beautiful celebration spaces.
+            </p>
+          </div>
+
+          <div className="flex flex-col items-center gap-3 text-sm text-[#EADDD6]/70 md:items-end">
+            <div className="flex gap-5">
+              <Link href="/#styles" className="transition hover:text-white">
+                Services
+              </Link>
+              <Link href="/#gallery" className="transition hover:text-white">
+                Gallery
+              </Link>
+              <Link href="/#inquiry" className="transition hover:text-white">
+                Inquiry
+              </Link>
+            </div>
+
+            <p>© 2026 Cherry Atelier. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
     </main>
   );
 }

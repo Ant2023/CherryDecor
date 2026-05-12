@@ -58,7 +58,7 @@ export default function Home() {
 
   <div className="relative z-10 mx-auto flex h-full max-w-7xl items-center px-6 lg:px-12">
     <div className="max-w-[520px]">
-      <h1 className="font-[var(--font-display)] text-[38px] font-semibold leading-[0.98] tracking-[-0.045em] text-[#211812] sm:text-[46px] md:text-[58px] lg:text-[66px] lg:font-medium lg:text-[#2F251F] xl:text-[72px]">
+      <h1 className="font-serif text-[38px] font-semibold leading-[0.98] text-[#211812] sm:text-[46px] md:text-[58px] lg:text-[66px] lg:font-medium lg:text-[#2F251F] xl:text-[72px]">
         The room should feel as good as the celebration.
       </h1>
 
@@ -96,7 +96,7 @@ export default function Home() {
       {/* Intro */}
       <section className="border-b border-[#E8DDD2] bg-[#FFFDF8] px-5 py-12 md:px-10 md:py-14">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="text-2xl font-bold leading-tight tracking-[-0.03em] text-[#241816] md:text-4xl">
+          <h2 className="font-serif text-3xl font-semibold leading-tight text-[#241816] md:text-5xl">
             A refined touch for intimate celebrations.
           </h2>
 
@@ -116,7 +116,7 @@ export default function Home() {
   <div className="mx-auto max-w-7xl">
     <div className="mx-auto mb-10 max-w-xl text-center md:mx-0 md:text-left">
      
-      <h2 className="mt-4 text-3xl font-semibold tracking-[-0.03em] text-[#3A2A24] md:text-4xl">
+      <h2 className="mt-4 font-serif text-4xl font-semibold leading-tight text-[#3A2A24] md:text-5xl">
         What Cherry can help with
       </h2>
     </div>
@@ -153,7 +153,7 @@ export default function Home() {
           />
 
           <div className="p-6">
-            <h3 className="text-2xl font-semibold tracking-[-0.03em] text-[#3A2A24]">
+            <h3 className="font-serif text-3xl font-semibold leading-tight text-[#3A2A24]">
               {service.title}
             </h3>
 
@@ -187,7 +187,7 @@ export default function Home() {
             <p className="text-[11px] uppercase tracking-[0.32em] text-[#E7C8C1]">
               About Cherry
             </p>
-            <h2 className="mx-auto mt-4 max-w-2xl text-3xl font-semibold leading-tight tracking-[-0.03em] md:mx-0 md:text-5xl">
+            <h2 className="mx-auto mt-4 max-w-2xl font-serif text-4xl font-semibold leading-tight md:mx-0 md:text-5xl">
               Thoughtful styling without doing too much.
             </h2>
             <p className="mx-auto mt-5 max-w-xl text-base leading-7 text-[#F5EDE7] md:mx-0 md:text-lg">
@@ -212,7 +212,7 @@ export default function Home() {
               <p className="text-[11px] uppercase tracking-[0.32em] text-[#B98B73]">
                 Gallery
               </p>
-              <h2 className="mt-4 text-3xl font-semibold tracking-[-0.03em] md:text-5xl">
+              <h2 className="mt-4 font-serif text-4xl font-semibold leading-tight md:text-5xl">
                 The feel we’re building.
               </h2>
             </div>
@@ -251,7 +251,7 @@ export default function Home() {
         Start here
       </p>
 
-      <h2 className="mx-auto mt-4 max-w-md text-3xl font-semibold leading-tight tracking-[-0.03em] text-white md:mx-0 md:text-5xl">
+      <h2 className="mx-auto mt-4 max-w-md font-serif text-4xl font-semibold leading-tight text-white md:mx-0 md:text-5xl">
         Tell Cherry what you’re planning.
       </h2>
 
