@@ -14,13 +14,13 @@ export default function AboutPage() {
           fill
           priority
           sizes="100vw"
-          className="object-contain object-right brightness-110"
+          className="translate-x-4 scale-[1.04] object-contain object-right brightness-[1.06] contrast-[1.08] saturate-[1.12] sm:translate-x-8 lg:translate-x-14"
         />
 
-        <div className="absolute inset-0 bg-gradient-to-r from-[#f7f1e8]/95 via-[#f7f1e8]/55 to-transparent" />
+        <div className="absolute inset-0 bg-[linear-gradient(90deg,#f7f1e8_0%,rgba(247,241,232,0.94)_32%,rgba(247,241,232,0.46)_50%,rgba(247,241,232,0.12)_64%,rgba(247,241,232,0)_76%)]" />
 
         <div className="relative z-10 mx-auto flex min-h-[580px] max-w-7xl items-center px-6 lg:px-12">
-          <div className="max-w-xl">
+          <div className="max-w-xl text-center sm:text-left">
             <h1 className="font-serif text-5xl leading-tight text-[#242116] md:text-6xl">
               Crafting Beautiful Moments That Last a Lifetime
             </h1>
@@ -32,7 +32,7 @@ export default function AboutPage() {
 
             <Link
               href="/inquiry"
-              className="mt-9 inline-flex bg-[#292817] px-8 py-4 text-xs font-semibold uppercase tracking-[0.25em] text-white transition hover:bg-[#b58a3b]"
+              className="mx-auto mt-9 inline-flex bg-[#292817] px-8 py-4 text-xs font-semibold uppercase tracking-[0.25em] text-white transition hover:bg-[#b58a3b] sm:mx-0"
             >
               Inquire Now
             </Link>
@@ -42,7 +42,7 @@ export default function AboutPage() {
 
       {/* STORY */}
       <section className="mx-auto grid max-w-7xl gap-12 px-6 py-20 lg:grid-cols-2 lg:px-12">
-        <div className="flex flex-col justify-center">
+        <div className="flex flex-col items-center justify-center text-center lg:items-start lg:text-left">
           <p className="mb-4 text-sm tracking-[0.35em] text-[#b58a3b]">
             OUR STORY
           </p>
@@ -54,21 +54,21 @@ export default function AboutPage() {
 
           <div className="mt-6 h-px w-16 bg-[#b58a3b]" />
 
-          <p className="mt-8 max-w-md leading-8 text-[#5e5748]">
+          <p className="mt-8 max-w-md text-left leading-8 text-[#5e5748]">
             Charity’s passion for beautiful spaces began at home. As a wife and
             mother, she spent years thoughtfully designing and decorating homes,
             family celebrations, and meaningful gatherings for friends and loved
             ones.
           </p>
 
-          <p className="mt-5 max-w-md leading-8 text-[#5e5748]">
+          <p className="mt-5 max-w-md text-left leading-8 text-[#5e5748]">
             What started as a natural gift for creating warm, elegant
             environments became something people admired and remembered. From
             intimate dinners to birthdays and family events, her eye for detail
             and love for hosting became the heart of every space she touched.
           </p>
 
-          <p className="mt-5 max-w-md leading-8 text-[#5e5748]">
+          <p className="mt-5 max-w-md text-left leading-8 text-[#5e5748]">
             Most recently, Charity decided to bring that same passion to a
             larger scale, creating elevated event experiences that blend
             timeless decor, thoughtful styling, and meaningful moments.
@@ -91,12 +91,12 @@ export default function AboutPage() {
       {/* VALUES */}
       <section className="border-y border-[#d8c7a7] bg-[#fbf7ef] px-6 py-16 lg:px-12">
         <div className="mx-auto max-w-7xl">
-          <div className="mb-12 flex items-center justify-center gap-6">
-            <div className="h-px w-24 bg-[#d8c7a7]" />
-            <p className="text-sm tracking-[0.4em] text-[#6f6047]">
+          <div className="mb-12 flex items-center justify-center gap-4 sm:gap-6">
+            <div className="h-px w-12 bg-[#d8c7a7] sm:w-24" />
+            <p className="whitespace-nowrap text-sm font-bold tracking-[0.4em] text-[#6f6047]">
               OUR VALUES
             </p>
-            <div className="h-px w-24 bg-[#d8c7a7]" />
+            <div className="h-px w-12 bg-[#d8c7a7] sm:w-24" />
           </div>
 
           <div className="grid gap-10 text-center md:grid-cols-3">
@@ -152,7 +152,7 @@ export default function AboutPage() {
         </div>
 
         <div className="flex items-center px-6 py-20 lg:px-20">
-          <div className="max-w-lg">
+          <div className="mx-auto max-w-lg text-center lg:mx-0 lg:text-left">
             <p className="mb-4 text-sm tracking-[0.35em] text-[#b58a3b]">
               BEHIND EVERY DETAIL
             </p>
@@ -161,9 +161,9 @@ export default function AboutPage() {
               A Team That Cares
             </h2>
 
-            <div className="mt-6 h-px w-16 bg-[#b58a3b]" />
+            <div className="mx-auto mt-6 h-px w-16 bg-[#b58a3b] lg:mx-0" />
 
-            <p className="mt-8 leading-8 text-[#5e5748]">
+            <p className="mt-8 text-left leading-8 text-[#5e5748]">
               Every celebration is approached with warmth, creativity, and
               attention to detail. We believe beautiful events should feel both
               elegant and personal — creating moments families and guests will
@@ -179,7 +179,7 @@ export default function AboutPage() {
 
       {/* APPROACH */}
       <section className="mx-auto grid max-w-7xl gap-12 px-6 py-20 lg:grid-cols-2 lg:px-12">
-        <div className="flex flex-col justify-center">
+        <div className="flex flex-col items-center justify-center text-center lg:items-start lg:text-left">
           <p className="mb-4 text-sm tracking-[0.35em] text-[#b58a3b]">
             OUR APPROACH
           </p>
@@ -190,7 +190,7 @@ export default function AboutPage() {
 
           <div className="mt-6 h-px w-16 bg-[#b58a3b]" />
 
-          <p className="mt-8 max-w-md leading-8 text-[#5e5748]">
+          <p className="mt-8 max-w-md text-left leading-8 text-[#5e5748]">
             Every event begins with listening. We take time to understand the
             vision, atmosphere, and meaningful details that make each
             celebration unique before bringing it all to life through timeless
